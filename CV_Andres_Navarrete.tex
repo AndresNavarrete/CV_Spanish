@@ -1,49 +1,45 @@
 %%%& -job-name=CV_Andres_Navarrete
 \documentclass[12pt,letterpaper,sans,english]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking' and 'fancy'
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking' and 'fancy'
 \moderncvcolor{purple}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 \usepackage[scale=0.85,letterpaper]{geometry}
 \usepackage{babel}
+\usepackage{fontawesome}
+
 %----------------------------------------------------------------------------------
 %            personal data
 %----------------------------------------------------------------------------------
 \firstname{Andrés}
 \familyname{Navarrete Contardo}
-%\title{Currículum Vitae}                               % optional, remove/comment the line if not wanted
-\address{Nataniel Cox 952}{Santiago}{Chile}         % optional, remove/comment the line if not wanted; the "country" arguments can be omitted or provided empty
-\mobile{+56 9 85897103}                          % optional, remove/comment the line if not wanted
-%\phone{phone number}                           % optional, remove/comment the line if not wanted
-%\fax{fax number}                             % optional, remove/comment the line if not wanted
+%\title{Currículum Vitae}                               
+\address{Santiago, Chile}  %\address{street and number}{postcode city}{country}      
+\phone[mobile]{+56 9 85897103}                          
+%\phone{phone number}                          
+%\fax{fax number}                            
+%\homepage{www.johndoe.com}
+\social[linkedin]{andresnavarretecontardo}
+\social[github]{AndresNavarrete}
+%\email{ainavarrete@uc.cl}
+\email{a.navarrete.contardo@gmail.com}
 
+% \photo[64pt][0.4pt]{picture}                
+%\quote{Estudiante de Ingeniería Civil Industrial con Diploma en Ingeniería en Transportes}      
 
-\email{ainavarrete@uc.cl} 
-\extrainfo{\emailsymbol\emaillink{a.navarrete.contardo@gmail.com}}
-                              % optional, remove/comment the line if not wanted
-%\homepage{home page}                         % optional, remove/comment the line if not wanted
-%\extrainfo{additional information}                 % optional, remove/comment the line if not wanted
-% \photo[64pt][0.4pt]{picture}                       % optional, uncomment the line if wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Estudiante de Ingeniería Civil Industrial con Diploma en Ingeniería en Transportes}                                 % optional, remove/comment the line if not wanted
-\quote{Ingeniero Civil Industrial con especialización en transporte y logística. Experiencia en investigación, logística  y consultoría.}
+%\quote{
+%Ingeniero Civil Industrial Transporte // Investigación en logística e investigación de operaciones | Experiencia profesional en logística y consultoría operacional y estratégica.
+%}
 %
 \begin{document}
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-\section{Educación}
-\cventry{2018-2020}{Magíster en Ciencias de la Ingeniería}{Pontificia Universidad Católica de Chile}{}{}{Tesis en Departamento de Ingeniería en Transporte y Logística: "Planificación eficiente de una operación de despacho a domicilio integrada a servicios de transporte público"}{ }
-
-
-\cventry{2013-2019}{Ingeniería Civil Industrial}{PUC}{}{}{Diploma en Ingeniería en Transporte.}
-
-\cventry{2013-2016}{Licenciatura en Ciencias Naturales y Matemáticas}{PUC}{College UC}{}{Major: Investigación Operativa. Minor: Recursos Humanos \& Sistemas de Transporte.}
-%
-%\cventry{1999-2012}{Educación básica y media}{Colegio Santa Cruz de Santiago}{}{}{}  % arguments 3 to 6 can be left empty
 
 \section{Experiencia}
 \subsection{Profesional}
+\cventry{2021 - Actual}{Ingeniero de proyectos}{Beetrack}{}{}{Desarrollador en el equipo de Labs. Diseñamos e implementamos soluciones tecnológicas para los diversos productos de Beetrack.  Trabajamos con dos tipos de proyectos. (1) Desarrollo de algoritmos, donde destacan los proyectos de diseño y desarrollo de algoritmos para la administración de inventario y para el ruteo de flotas de vehículos. (2) Soluciones de Data Science, donde se destaca el desarrollo de un servicio predicativo de tiempos de viaje considerando tráfico usando Machine Learning. Las principales tecnologías aplicadas son Kotlin, Python y AWS EC2.}
 
-\cventry{Mayo 2020 - Actual}{Ingeniero de proyecto}{DICTUC}{}{}{Participo en una consultora de transporte donde estudiamos la demanda por uso de automóviles en ciudades de Latinoamérica. Mis responsabilidades son diseñar e implementar una serie de encuestas apropiadas, analizar bases de datos y calibrar modelos matemáticos. Para esto, trabajo en equipos multidisciplinarios y gestiono la implementación de encuestas en Santiago y Bogotá.}
+\cventry{2020}{Ingeniero de proyectos}{DICTUC}{}{}{Consultora de estudios de demanda de transporte. Junto al equipo de proyectos trabajé en el desarrollo, ejecución y entrega de dos proyectos para la estimación de demanda por transporte. (1) Hicimos un estudio demanda por uso de automóviles en ciudades de América Latina y el Caribe para el Banco Interamericano de Desarrollo. Mis responsabilidades fueron diseñar e implementar encuestas de movilidad en Santiago y Bogotá, analizar bases de datos, calibrar modelos estadísticos y generar reportes. (2) Desarrollamos un estudio para caracterizar la demanda por transporte público de personas con discapacidad física o mental en Chile. Mis responsabilidades fueron implementar y gestionar la aplicación de encuestas en seis capitales regionales de Chile. Las principales tecnologías aplicadas fueron Python, Qualtrics y R.}
 \cventry{2019}{Asesoría}{Pyme UC}{}{}{Ayudante en asesoría de gestión de negocios y administración a empresa del rubro de la construcción. Desarrollamos un nuevo modelo de negocios para profesionalizar la empresa.}
 \cventry{2018}{Práctica profesional}{Walmart Chile}{Logística y Supply Chain}{}{Encargado de proyecto de mejoramiento y modernización en logística de despacho a domicilio y trabajé junto a diversas consultoras operacionales.}
 %\cventry{2018}{Asesoría operacional}{DuPont Pioneer Chile}{}{}{Gestión de herramientas y modelos de simulación parar evaluación de escenarios de producción  en una cadena de producción agrícola.}
@@ -63,6 +59,15 @@
 \cventry{2020}{Expositor en congresos}{}{}{}{Expositor en IV Congreso de Estudiantes de Ingenieria USM-UC, realizado del 27 al 28 de Agosto del 2020.}
 \cventry{2020}{Curso online de Machine Learning}{Amazon Web Service}{}{}{Aprobado curso online de Coursera sobre machine learning aplicado a platadormas y servicios de AWS. Verificable en \href{http://www.coursera.org/verify/VHZPPXDH7N3N}{\textbf{Coursera}},}
 %\cventry{2015-2017}{Ayudante Docente}{Facultad de Matemáticas}{Pontificia Universidad Católica de Chile}{}{Álgebra, Cálculo I, II, III y Ecuaciones Diferenciales}
+\section{Educación}
+\cventry{2018-2020}{Magíster en Ciencias de la Ingeniería}{Pontificia Universidad Católica de Chile}{}{}{Tesis en Departamento de Ingeniería en Transporte y Logística: "Planificación eficiente de una operación de despacho a domicilio integrada a servicios de transporte público"}{ }
+
+
+\cventry{2013-2019}{Ingeniería Civil Industrial}{PUC}{}{}{Diploma en Ingeniería en Transporte.}
+
+\cventry{2013-2016}{Licenciatura en Ciencias Naturales y Matemáticas}{PUC}{College UC}{}{Major: Investigación Operativa. Minor: Recursos Humanos \& Sistemas de Transporte.}
+%
+%\cventry{1999-2012}{Educación básica y media}{Colegio Santa Cruz de Santiago}{}{}{}  % arguments 3 to 6 can be left empty
 
 \section{Reconocimientos}
 \cventry{2017}{100 Jóvenes Líderes}{El Mercurio: Revista "El Sábado", Universidad Adolfo Ibáñez}{}{}{Reconocimiento por proyecto de innovación en seguridad de cuerpo de bomberos y brigadistas en Chile. Este premio se otorga anualmente a 100 chilenos menores de 35 años que demuestran ser potenciales líderes para el pais.}{}{}
@@ -70,7 +75,7 @@
 \cventry{2017}{Mejor alumno promoción 2017}{College UC}{Licenciatura en Ciencias Naturales y Matemáticas}{}{Estudiante con la calificación más alta.}
 \section{Otros}
 \cventry{2014-2018}{Profesor y Coordinador PrePreu}{}{}{Voluntariado}{Coordinador General de proyecto de educación social con más de 170 estudiantes de colegios vulnerables de la Región Metropolitana. Fui coordinador general durante dos años y gestioné un equipo de más de 50 profesores voluntarios.}
-\cventry{2016-2019}{Tutor Académico}{College UC}{}{}{Apoyo acádemico y seguimiento de estudiantes de vias de admisión especial.}
+\cventry{2016-2019}{Tutor Académico}{College UC}{}{}{Apoyo académico y seguimiento de estudiantes de vías de admisión especial.}
 \section{Lenguajes}
 \cvitemwithcomment{Inglés}{Alto. 99 en TOEFL IBT, Octubre 2019}{}
 \section{Competencias técnicas}
